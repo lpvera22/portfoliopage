@@ -11,13 +11,14 @@
   <title>Freelancer - Start Bootstrap Theme</title>
 
   <!-- Custom fonts for this theme -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  {% load staticfiles %}
+  <link href="{% static '/job/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Theme CSS -->
  
-  <link rel="stylesheet" href="css/freelancer.min.css" >
+  <link rel="stylesheet" href="{% static '/job/css/freelancer.min.css'%}" >
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -60,10 +61,10 @@
     <div class="container d-flex align-items-center flex-column">
 
       <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5" src="img/avataaars.svg" alt="">
+      <img class="masthead-avatar mb-5" src="{% static 'job/img/avataaars.svg'%}" alt="">
 
       <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-uppercase mb-0">Start Bootstrap</h1>
+      <h1 class="masthead-heading text-uppercase mb-0">This is me!</h1>
 
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
@@ -75,7 +76,7 @@
       </div>
 
       <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
+      <p class="masthead-subheading font-weight-light mb-0">Computer Science Engineer - Web Designer </p>
 
     </div>
   </header>
@@ -107,7 +108,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+            <img class="img-fluid" src="{% static 'job/img/portfolio/cabin.png' %}" alt="">
           </div>
         </div>
 
@@ -119,7 +120,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+            <img class="img-fluid" src="{% static 'job/img/portfolio/cake.png' %}" alt="">
           </div>
         </div>
 
@@ -131,7 +132,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+            <img class="img-fluid" src="{% static 'job/img/portfolio/circus.png' %}" alt="">
           </div>
         </div>
 
@@ -143,7 +144,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/game.png" alt="">
+            <img class="img-fluid" src="{% static 'job/img/portfolio/game.png' %}" alt="">
           </div>
         </div>
 
@@ -155,7 +156,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/safe.png" alt="">
+            <img class="img-fluid" src="{% static 'job/img/portfolio/safe.png'%}" alt="">
           </div>
         </div>
 
@@ -167,7 +168,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
+            <img class="img-fluid" src="{% static 'job/img/portfolio/submarine.png' %}" alt="">
           </div>
         </div>
 
